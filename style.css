@@ -1,3 +1,13 @@
+:root{
+    --btn_background:  #F9C06A;
+    --btn_padding: 14px 26px;
+    --btn_color: #1E1E1E;
+    --btn_radius: 24px;
+
+    --line_height_34: 34px;
+    --color_light: white;
+    --color_dark: #707070;
+}
 body{
     font-family: "Playfair Display", serif;
     margin: 0;
@@ -15,7 +25,7 @@ body,
 .container
 {
     border: 2px solid yellow;
-    width: 1180px;
+    max-width: 1180px;
     margin: 0 auto;
 }
 
@@ -36,7 +46,7 @@ header .logo {
 }
 
 header a {
-    color: white;
+    color: var(--color_light);
 }
 
 header nav{
@@ -83,14 +93,15 @@ header .hero {
     text-decoration: underline;
 }
 .Signup-btn {
-    color: #1E1E1E;
-    background-color: #F9C06A;
-    border-radius: 24px;
-    padding: 14px 27px 15px;
+    color: var(--btn_color);
+    background-color: var(--btn_background);
+    border-radius: var(--btn_radius);
+    padding: var(--btn_padding);
+    display: inline-block;
     transition: 0.3s;
 }
 
-.Signup-btn:hover {
+.btn-hover:hover {
     box-shadow: 0 0 10px 2px #666;
 }
 .hero{
@@ -99,26 +110,26 @@ header .hero {
     padding-bottom: 95px;
 }
 .hero .label{
-    color: white;
+    color: var(--color_light);
     font-size: 22px;
 }
 
 .hero .title{
-    color: white;
+    color: var(--color_light);
     font-family: "Clicker Script", cursive;
     font-size: 220px;  
 }
 
 .hero .description{
-    color: white;
+    color: var(--color_light);
     font-size: 20px;
-    line-height: 34px;
+    line-height: var(--line_height_34);
 }
 .order-btn{
-    background-color: #F9C06A;
-    padding: 14px 26px;
-    color: #1E1E1E;
-    border-radius: 24px;
+    background-color: var(--btn_background);
+    padding: var(--btn_padding);
+    color: var(--btn_color);
+    border-radius: var(--btn_radius);
     font-weight: bold;
     display: inline-block;
     margin-top: 20px;
