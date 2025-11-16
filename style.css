@@ -1,12 +1,13 @@
 :root{
     --btn_background:  #F9C06A;
     --btn_padding: 14px 26px;
-    --btn_color: #1E1E1E;
     --btn_radius: 24px;
 
     --line_height_34: 34px;
     --color_light: white;
     --color_dark: #707070;
+    --black_color: #1E1E1E;
+
 
     --font_family_logo: "Clicker Script", cursive;
     --font_text :20px;
@@ -34,17 +35,22 @@ body,
     margin: 0 auto;
 }
 .btn {
-    color: var(--btn_color);
+    color: var(--black_color);
     background-color: var(--btn_background);
     border-radius: var(--btn_radius);
     padding: var(--btn_padding);
     display: inline-block;
     transition: 0.3s;
+    font-weight: bold;
     }
 
 .dark_heading {
     color: var(--color_coffe);
     font-size: 54px;
+}
+.card_back{
+    background-color:#FFF9F1 ;
+    border: 1px solid #F9C06A;
 }
 
 header {
@@ -161,4 +167,52 @@ line-height: var(--line_height_34);
     margin-right:80px;
     vertical-align: 60px;
     
+}
+
+.products{
+    border: 1px solid red;
+}
+
+.products h2{
+    text-align: center;
+}
+.products .description{
+    color: var(--color_dark);
+    text-align: center;
+    margin: 16px 0 32px 0;
+    font-size: var(--font_text);
+}
+.products .card{
+  display: inline-block; 
+  text-align: center; 
+  margin-right: 14px;
+}
+
+.products .card:last-child{
+    margin-right: 0;
+}
+
+.products .card_back > *{
+    display: block;
+}
+.products .type{
+    color: var(--color_coffe);
+    font-weight: bold;
+    font-size: 22px;
+    margin-top: 16px;
+    margin-bottom: 6px;
+}
+.products .charachteristics{
+color: var(--black_color);
+margin-bottom: 6px;
+}
+
+.products .price{
+    color: var(--color_coffe);
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 18px;
+}
+.products .btn{
+display: inline-block;
 }
