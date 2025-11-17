@@ -171,6 +171,8 @@ line-height: var(--line_height_34);
 
 .products{
     border: 1px solid red;
+    margin-bottom: 82px;
+    
 }
 
 .products h2{
@@ -199,7 +201,7 @@ line-height: var(--line_height_34);
     color: var(--color_coffe);
     font-weight: bold;
     font-size: 22px;
-    margin-top: 16px;
+    margin-top: 0px;
     margin-bottom: 6px;
 }
 .products .charachteristics{
@@ -211,8 +213,72 @@ margin-bottom: 6px;
     color: var(--color_coffe);
     font-size: 18px;
     font-weight: bold;
-    margin-bottom: 18px;
+    margin-bottom: 5px;
 }
 .products .btn{
 display: inline-block;
+position: relative;
+top: 25px;
+}
+
+.products .card_back{
+    border-top: none;
+    margin-top: -5px;
+    padding-top: 16px;
+    
+}
+
+.features{
+    text-align: center;
+}
+.features .description {
+    margin-top: 16px;
+    margin-bottom: 32px;
+    color: var(--color_dark);
+    font-size: var(--font_text);
+}
+.features .card{
+    display: inline-block;
+    text-align: center;
+    padding: 36px 39px;
+    margin-right: 20px;
+}
+.features .card:last-child{
+    margin-right: 0;
+}
+.features .card > *{
+    display: block;
+}
+.features .card img{
+    display: inline-block;
+}
+.features .type{
+    color: var(--color_coffe);
+    font-size: 28px;
+    font-weight: bold;
+    margin-top: 25px;
+    margin-bottom: 8px;
+}
+.features .text{
+    color: var(--color_dark);
+    font-size: var(--font_text);
+    width: 176px;
+}
+.features .card:hover{
+    background-color: #FFEED8;
+    border: none;
+}
+.join p {
+font-size: var(--font_text);
+color: var(--color_dark);
+margin-top:32px ;
+}
+.join h3{
+    font-size:30px;
+    color: var(--color_coffe);
+    margin-bottom:24px;
+
+}
+.join .btn{
+    padding: 14px 41px;
 }
