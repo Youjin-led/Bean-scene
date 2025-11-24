@@ -11,6 +11,7 @@
 
     --font_family_logo: "Clicker Script", cursive;
     --font_text :20px;
+    --font_heading: 54px;
 
     --color_coffe: #603809;
 }
@@ -46,7 +47,7 @@ body,
 
 .dark_heading {
     color: var(--color_coffe);
-    font-size: 54px;
+    font-size: var(--font_heading)
 }
 .card_back{
     background-color:#FFF9F1 ;
@@ -282,3 +283,32 @@ margin-top:32px ;
 .join .btn{
     padding: 14px 41px;
 }
+
+.offer{
+    background-image: url(img/cup.png), url(img/coffee_bean.png),url(img/Group\ 36.png);
+     padding-block: 135px;
+    background-repeat: no-repeat;
+    background-size: 300px 467px, 657px 574px, cover;
+    background-position: 90%, right, 0;
+   margin-top: 82px;
+   margin-bottom: 82px;
+
+}
+.offer .text{
+    width: 575px;
+
+}
+
+.offer h2{
+    color: var(--color_light);
+    font-size: var(--font_heading);
+}
+.offer p{
+    color: var(--color_light);
+    font-size: var(--font_text);
+    line-height: var(--line_height_34);
+    margin-top: 22px;
+    margin-bottom: 22px;   
+}
+
+
