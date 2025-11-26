@@ -311,4 +311,67 @@ margin-top:32px ;
     margin-bottom: 22px;   
 }
 
+.feedback{
+    margin-block: 82px;
+    text-align: center;
+}
+.feedback .description{
+    margin-top: 16px;
+    color: var(--color_dark);
+    font-size: var(--font_text);
+}
+.slider_wrapper{
+    border: 2px solid red;
+    padding-inline: 41px;
+    padding-block: 57px;
+}
+.slider{
+    border: 2px solid green;
+}
+
+.slide{
+    background-color:#FFF9F1 ;
+    padding: 140px 100px 17.5px;
+    position: relative;
+    border: 2px solid #f9c06a70;
+
+}
+.quote{
+position: absolute;
+top: 60px;
+left: 29px;
+
+}
+.slide p{
+    font-size: 18px;
+    line-height: 36px;
+    font-weight: 600;
+    color: var(--color_dark);
+    margin-bottom: 13px;
+}
+
+.slide h3{
+    color: var(--color_coffe);
+    font-size: 32px;
+    margin-bottom: 4px;
+}
+.slide .status{
+    display: block;
+    font-size: var(--font_text);
+    color: var(--color_dark);
+    margin-bottom: 8px;
+}
+.slide .avatar{
+    border-radius: 16px;
+    width: 83px;
+    height: 83px;
+    background-image: url(img/man.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0px;
+    margin: 0 auto;
+
+}
+
+
 
