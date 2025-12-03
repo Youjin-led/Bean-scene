@@ -324,16 +324,31 @@ margin-top:32px ;
     border: 2px solid red;
     padding-inline: 41px;
     padding-block: 57px;
+    position: relative;
 }
 .slider{
     border: 2px solid green;
+    overflow: hidden;
+    width: 980px;
+    margin: 0 auto;
+}
+
+.slides{
+    border: 2px solid red;
+    width: 2955px;
+    transition: 0.5s;
+
 }
 
 .slide{
+    vertical-align: top;
+    display: inline-block;
     background-color:#FFF9F1 ;
     padding: 140px 100px 17.5px;
     position: relative;
     border: 2px solid #f9c06a70;
+    width: 980px;
+    height: 524px;
 
 }
 .quote{
@@ -373,5 +388,87 @@ left: 29px;
 
 }
 
+.feedback .controls{
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+}
+
+.feedback .controls input{
+    appearance: none;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    border: 6px solid var(--color_coffe);
+    margin-right: 11px;
+    position: relative;
+    cursor: pointer;
+}
+
+.feedback .controls input:last-child{
+  margin-right: 0;  
+}
+.feedback .controls input::after{
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: 2.1px;
+    width: 19px;
+    height: 19px;
+    background-color: var(--color_coffe);
+    border-radius: 50%;
+    display: none;
+
+}
+.feedback .controls input:checked::after{
+    display: block;
+}
+
+.controls:has(#control1:checked) + .slider .slides{
+    transform: translateX(0px);
+}
+.controls:has(#control2:checked) + .slider .slides{
+    transform: translateX(-980px);
+}
+.controls:has(#control3:checked) + .slider .slides{
+    transform: translateX(-1960px);
+}
 
 
+.arrows_box{
+    display: none;
+    position: relative;
+}
+.controls:has(#control1:checked) ~ .arrows .arrows_slide1,
+.controls:has(#control2:checked) ~ .arrows .arrows_slide2,
+.controls:has(#control3:checked) ~ .arrows .arrows_slide3 {
+    display: block;
+}
+.arrows{
+    position: absolute;
+    top: 45%;
+    left: 0;
+    width: 100%;
+
+}
+.arrows_box{
+    position: relative;
+}
+
+.arrows_box label{
+    background-color: var(--btn_background);
+    width: 82px;
+    height: 82px;
+    border-radius: 16px;
+    display: inline-block;
+    line-height: 82px;
+    position: absolute;
+ top: 0;
+ cursor: pointer;
+}
+.arrows_box label:first-child{
+left: 60px ;
+}
+.arrows_box label:last-child{
+    right:60px ;
+}
