@@ -15,7 +15,7 @@
 
     --color_coffe: #603809;
 }
-body{
+body, *{
     font-family: "Playfair Display", serif;
     margin: 0;
     padding: 0;
@@ -391,7 +391,7 @@ left: 29px;
 .feedback .controls{
     position: absolute;
     bottom: 0px;
-    left: 50%;
+    left: 45%;
 }
 
 .feedback .controls input{
@@ -463,12 +463,162 @@ left: 29px;
     display: inline-block;
     line-height: 82px;
     position: absolute;
- top: 0;
- cursor: pointer;
+    top: 0;
+    cursor: pointer;
+    transition: 0.3s;
 }
+.arrows_box label:hover{
+    transform: scale(1.2);
+}
+
 .arrows_box label:first-child{
 left: 60px ;
 }
 .arrows_box label:last-child{
     right:60px ;
+}
+
+.subscribe{
+    background-image: linear-gradient(#603709d0), url(img/Rectangle\ 14.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-block: 80px;
+    text-align: center;
+    position: relative;
+}
+
+.subscribe h2{
+    font-size: var(--font_heading);
+    color: var(--color_light);
+}
+
+.subscribe p{
+    font-size: var(--font_text);
+    color: var(--color_light);
+    margin-top: 16px;
+    margin-bottom: 26px;
+}
+.subscribe form{
+    border: 1px solid #F9C06A6B;
+    display: inline-block;
+    border-radius: 6px;
+}
+
+.subscribe input[type="email"]{
+    padding: 20px 5px 19px 26px;
+    font-size: var(--font_text);
+    border-radius: 4px;
+    border: none;
+    width: 505px;
+}
+.subscribe input[type="email"]:focus{
+   outline: none;
+}
+
+.subscribe input[type="email"]::placeholder{
+    color: #00000057;
+}
+
+.subscribe input[type="submit"]{
+    color: var(--color_coffe);
+    background-color: var(--btn_background);
+    font-weight: bold;
+    font-size: 22px;
+    padding: 19px 24px 18px 24px;
+    border-radius: 4px;
+    border: none;
+    vertical-align: bottom;
+    margin-left: -8px;
+    
+}
+.subscribe img{
+    position: absolute;
+    top: 138px;
+    z-index: 1;
+   
+}
+.subscribe .img_left{
+left: -250px;
+}
+
+.subscribe .img_right{
+    transform: scaleX(-1);
+    right: -250px;
+}
+
+footer{
+   background-image:  url(img/fotter_image.png), linear-gradient(#362209), url(img/Rectangle\ 7.png);
+   color: var(--color_light);
+   padding-bottom:80px ;
+   padding-top: 162px;
+}
+
+footer a{
+    color: var(--color_light);
+}
+
+footer .contacts,
+footer nav,
+footer nav ul{
+    display: inline-block;
+}
+
+footer .contacts{
+    width: 380px;
+}
+
+footer .logo{
+    font-family: var(--font_family_logo);
+    font-size: var(--font_heading);
+}
+
+footer .contacts p{
+    font-size: 14px;
+    line-height: 22px;
+    margin-block: 20px;
+}
+
+footer .socials a{
+    margin-right: 20px;
+    vertical-align: bottom;
+}
+
+footer.socials a:last-child{
+    margin-right: 0;
+}
+
+footer ul{
+    list-style: none;
+    padding-left: 0;
+    margin-right: 66px;
+}
+
+footer ul li:first-child{
+    font-size: 26px;
+    font-weight: bold;
+    margin-bottom: 55px;
+    line-height: 0;
+}
+
+footer ul li {
+    font-size: 18px;
+    line-height: 42px;
+
+}
+
+footer ul:last-child{
+    width: 332px;
+    margin-right: 0;
+    vertical-align: top;
+}
+footer ul:last-child li:first-child {
+    margin-bottom: 50px;
+}
+
+footer ul:last-child li:nth-child(2){
+    line-height: normal;
+}
+
+footer nav{
+    margin-left: 45px;
 }
